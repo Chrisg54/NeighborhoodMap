@@ -1,0 +1,15 @@
+#hamburger {
+    display: none;
+}
+
+#left-pane {
+  width: 30%;
+  max-width: 300px;
+  height: 100%;
+  float: left;
+  display: inline-block;
+}
+
+.hide-pane {
+  display: inline-block !important;
+}

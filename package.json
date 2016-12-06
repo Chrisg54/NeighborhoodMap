@@ -1,0 +1,33 @@
+{
+  "name": "NeighborhoodMap",
+  "version": "1.0.0",
+  "description": "Neighborhood Map",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chrisg54/NeighborhoodMap.git"
+  },
+  "keywords": [
+    "Udacity",
+    "NeighborhoodMap"
+  ],
+  "author": "Christopher Gomez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chrisg54/NeighborhoodMap/issues"
+  },
+  "homepage": "https://github.com/Chrisg54/NeighborhoodMap#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-minify": "0.0.14",
+    "gulp-serve": "^1.4.0",
+    "gulp-useref": "^3.1.2",
+    "gulp-watch": "^4.3.11"
+  }
+}

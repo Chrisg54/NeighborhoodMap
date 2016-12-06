@@ -1,0 +1,99 @@
+html {
+  height: 100%;
+}
+
+body {
+  background-color: black;
+  color: black;
+  font-size: 18px;
+  height: 100%;
+}
+
+#container {
+  height: 100%;
+}
+
+#hamburger {
+    width: 25px;
+}
+
+#left-pane {
+  width: 250px;
+  height: 100%;
+  float: left;
+  display: none;
+  margin-right: 10px;
+}
+
+#left-pane-title
+{
+  color: white;
+  padding: 5px;
+}
+
+#right-pane {
+  width: 100%;
+  height: calc(100% - 50px);
+}
+
+#right-pane-top {
+  background-color: #252323;
+  height: 30px;
+  width: 100%;
+}
+
+#map {
+  height: 100%;
+}
+
+.hide-pane {
+  display: none !important;
+}
+
+.error {
+  display: none;
+  position: absolute;
+  left: calc(100% - 300px);
+  top: 40px;
+  background-color: red;
+  color: white;
+  text-align: white;
+  padding: 20px;
+  width: 200px;
+  height: 50px;
+}
+
+/*filter*/
+#filter {
+    width: calc(100% - 37px);
+    font-size: 16px;
+    padding: 12px 20px 12px 15px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+}
+
+#myUL {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#myUL li a {
+    border: 1px solid #ddd;
+    margin-top: -1px;
+    background-color: #f6f6f6;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    display: block;
+}
+
+#myUL li a.header {
+    background-color: #e2e2e2;
+    cursor: default;
+}
+
+#myUL li a:hover:not(.header) {
+    background-color: #eee;
+}

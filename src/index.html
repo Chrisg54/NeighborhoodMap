@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="Meet-up event planner">
+    <meta name="author" content="Christopher Gomez">
+    <link rel="icon" href="">
+
+    <title>Neighborhood Map</title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main-tablet.css" media="screen and (min-width:768px)">
+    <link rel="stylesheet" href="css/main-desktop.css" media="screen and (min-width:980px)">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div id="container">
+        <aside>
+            <div id="left-pane">
+                <div id="left-pane-title">Chicago Loop Locations</div>
+                <div id="locations-list">
+                    <input type="text" id="filter" data-bind="textInput: filterstring, event: { keypress: filter }, event: { keyup: filter }" placeholder="Search for locations..">
+
+                    <ul id="myUL" data-bind="foreach: locations">
+                      <li><a href="#" data-bind="text: location, event: { click: toggleMarker }"></a></li>
+                    </ul>                
+                </div>
+            </div>
+        </aside>
+        <div id="right-pane">
+            <nav>
+                <div id="right-pane-top"><img id="hamburger" src="img/Hamburger_icon.png"></div>
+            </nav>
+            <div id="map" onerror="mapError()"></div>
+            <div id="map-error" class="error">
+                There is a problem with the Google map api. Try again.
+            </div>       
+            <div id="wiki-error" class="error">
+                There is a problem with the Wikipedia api. Try again.
+            </div>  
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/knockout-3.4.1.js"></script> 
+    <!--build:js js/main-min.js -->
+    <script src="js/main.js"></script> 
+    <!-- endbuild -->          
+    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCBqlKqmtL2U2PeChYn4bNtnZkSiq4E5qI&callback=initMap" async defer></script> 
+</body>
+</html>
